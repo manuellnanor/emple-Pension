@@ -194,7 +194,7 @@ export default function Header({ currentView, onViewChange, onProviderPlanChange
               LIFE
             </a>
             <button onClick={() => handleNavClick("#plans-list-section", "PRODUCTS")} className="hover:text-emerald-300 transition-colors">
-              PENSIONS
+              HEALTH
             </button>
           </div>
         </div>
