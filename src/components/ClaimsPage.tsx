@@ -148,7 +148,7 @@ export default function ClaimsPage({ onMakeClaim, onTrackClaim }: ClaimsPageProp
         date: "May 28, 2026"
       });
     } else {
-      setTrackError("Claim reference not found. Please verify the format (e.g. CLM-987413) or submit a new claim to test.");
+      setTrackError("Withdrawal reference not found. Please verify the format or submit a new withdrawal request.");
       setTrackingResult(null);
     }
   };
@@ -168,9 +168,9 @@ export default function ClaimsPage({ onMakeClaim, onTrackClaim }: ClaimsPageProp
         <div className="absolute inset-0 bg-[#022c22]/35 z-10" />
         <img
           src="/assets/images/emple_cash_plan_1780859279120.png"
-          alt="emPLE Claims Support banner image"
+          alt="emPLE withdrawal support banner image"
           referrerPolicy="no-referrer"
-          className="w-full h-full object-cover object-center transform scale-100 hover:scale-105 transition-transform duration-1000"
+          className="w-full h-full object-cover object-[center_22%] transform scale-100 hover:scale-105 transition-transform duration-1000"
         />
         
         {/* Content Overlay */}
@@ -182,7 +182,7 @@ export default function ClaimsPage({ onMakeClaim, onTrackClaim }: ClaimsPageProp
             transition={{ duration: 0.6 }}
             className="text-[38px] sm:text-[48px] md:text-[56px] font-bold font-display !text-white tracking-tight"
           >
-            Claims
+            Withdrawal
           </motion.h1>
           </div>
         </div>
@@ -195,7 +195,7 @@ export default function ClaimsPage({ onMakeClaim, onTrackClaim }: ClaimsPageProp
           {/* Left Column: Topic tracker */}
           <div className="lg:col-span-4">
             <span className="text-[11px] font-bold text-gray-400 tracking-widest uppercase block mb-1">
-              PROCESS CLAIMS
+              PROCESS WITHDRAWAL
             </span>
           </div>
 
@@ -203,15 +203,15 @@ export default function ClaimsPage({ onMakeClaim, onTrackClaim }: ClaimsPageProp
           <div className="lg:col-span-8 space-y-10">
             <div className="space-y-6">
               <h2 className="text-[28px] sm:text-[34px] leading-[1.14] font-bold tracking-tight text-gray-950 font-sans">
-                Standing with You When It Matters Most
+                Access Your Pension Benefits with Confidence
               </h2>
               
               <div className="space-y-4 text-[13px] sm:text-[14px] leading-relaxed text-gray-500 font-sans">
                 <p>
-                  Health can be unpredictable. A sudden illness, an unexpected diagnosis, a family emergency — these moments can change everything. That’s when you need more than promises; you need real support.
+                  Your pension savings are built to support important moments in life. When you qualify for a withdrawal, you deserve a process that is clear, secure, and easy to follow.
                 </p>
                 <p>
-                  At emPLE Pensions, your claim is never just paperwork. It represents someone’s future, security, and peace of mind. That’s why we handle every claim with speed, fairness, and complete transparency.
+                  At emPLE Pensions Trust, every withdrawal request is handled with care, fairness, and transparency. Our team guides you through the required documentation and keeps you informed until your benefits are paid.
                 </p>
               </div>
             </div>
@@ -246,22 +246,22 @@ export default function ClaimsPage({ onMakeClaim, onTrackClaim }: ClaimsPageProp
               <div className="space-y-6">
                 <div>
                   <span className="text-[11px] font-bold text-gray-400 tracking-widest uppercase block mb-1">
-                    EASE CLAIM
+                    EASE WITHDRAWAL
                   </span>
                   <h3 className="text-[22px] sm:text-[26px] font-bold text-gray-900 tracking-tight font-sans">
-                    Make a Claim
+                    Make a Withdrawal
                   </h3>
                 </div>
                 
                 <p className="text-[13px] text-gray-500 leading-relaxed font-sans font-light">
-                  When life takes an unexpected turn, you deserve clarity and support — not added stress. That's why our claims process is designed to be straightforward and transparent, helping you get back on track with confidence.
+                  Submit your eligible pension withdrawal request through a straightforward and transparent process, with support available whenever you need guidance.
                 </p>
 
                 <button
                   onClick={onMakeClaim}
                   className="px-5 py-2.5 bg-[#32B44A] hover:bg-[#059669] text-white text-[12px] font-bold tracking-wider rounded-md transition-all duration-300 inline-flex items-center space-x-2 shadow-sm cursor-pointer hover:-translate-y-0.5"
                 >
-                  <span>Start Claim</span>
+                  <span>Start Withdrawal</span>
                   <ArrowRight size={14} />
                 </button>
               </div>
@@ -270,11 +270,11 @@ export default function ClaimsPage({ onMakeClaim, onTrackClaim }: ClaimsPageProp
               <div className="pt-8 mt-8 border-t border-gray-100 space-y-3.5">
                 <div className="flex items-center space-x-3">
                   <CheckCircle2 size={16} className="text-[#32B44A] shrink-0" />
-                  <span className="text-[12px] text-gray-600 font-sans">Submit online through our website in minutes</span>
+                  <span className="text-[12px] text-gray-600 font-sans">Submit your withdrawal request online in minutes</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle2 size={16} className="text-[#32B44A] shrink-0" />
-                  <span className="text-[12px] text-gray-600 font-sans">Send your details via WhatsApp for quick support</span>
+                  <span className="text-[12px] text-gray-600 font-sans">Receive guidance on eligibility and required documents</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle2 size={16} className="text-[#32B44A] shrink-0" />
@@ -291,19 +291,19 @@ export default function ClaimsPage({ onMakeClaim, onTrackClaim }: ClaimsPageProp
                     EASE TRACKING
                   </span>
                   <h3 className="text-[22px] sm:text-[26px] font-bold text-gray-900 tracking-tight font-sans">
-                    Track a Claim
+                    Track a Withdrawal
                   </h3>
                 </div>
 
                 <p className="text-[13px] text-gray-500 leading-relaxed font-sans font-light">
-                  Your peace of mind matters. That's why we aim to give you clarity every step of the way. Once you've made a claim, you can follow its progress in real time. Once your claim is logged, you will receive a unique reference number.
+                  Follow your withdrawal request from submission through review and payment. Once your request is logged, you will receive a unique reference number for status updates.
                 </p>
 
                 <button
                   onClick={onTrackClaim}
                   className="px-5 py-2.5 bg-[#32B44A] hover:bg-[#059669] text-white text-[12px] font-bold tracking-wider rounded-md transition-all duration-300 inline-flex items-center space-x-2 shadow-sm cursor-pointer hover:-translate-y-0.5"
                 >
-                  <span>Track My Claim</span>
+                  <span>Track My Withdrawal</span>
                   <ArrowRight size={14} />
                 </button>
               </div>
@@ -316,7 +316,7 @@ export default function ClaimsPage({ onMakeClaim, onTrackClaim }: ClaimsPageProp
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle2 size={16} className="text-[#32B44A] shrink-0" />
-                  <span className="text-[12px] text-gray-600 font-sans">Get updates on the status of your claim</span>
+                  <span className="text-[12px] text-gray-600 font-sans">Get updates on the status of your withdrawal</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle2 size={16} className="text-[#32B44A] shrink-0" />
@@ -340,7 +340,7 @@ export default function ClaimsPage({ onMakeClaim, onTrackClaim }: ClaimsPageProp
               Timelines You Can Trust
             </h2>
             <p className="text-emerald-100/80 text-[13px] sm:text-[14px] leading-relaxed font-sans font-light max-w-2xl">
-              We know speed matters. That's why we commit to transparency that ensures you're never left wondering and clear timelines you can count on. You'll always know what's happening, and when.
+              We provide clear updates at every stage, so you understand what has been received, what is being reviewed, and when your approved benefit will be paid.
             </p>
           </div>
 
@@ -351,10 +351,10 @@ export default function ClaimsPage({ onMakeClaim, onTrackClaim }: ClaimsPageProp
                 <Zap size={22} className="fill-white/10 text-white" />
               </div>
               <h3 className="text-lg font-bold text-white font-sans">
-                Claim submission
+                Withdrawal submission
               </h3>
               <p className="text-emerald-100/60 text-xs sm:text-[13px] leading-relaxed font-sans font-light">
-                Instantly acknowledged once received
+                Your request is acknowledged once received
               </p>
             </div>
 
@@ -364,10 +364,10 @@ export default function ClaimsPage({ onMakeClaim, onTrackClaim }: ClaimsPageProp
                 <Activity size={22} className="text-white" />
               </div>
               <h3 className="text-lg font-bold text-white font-sans">
-                Claim processing & updates
+                Review and verification
               </h3>
               <p className="text-emerald-100/60 text-xs sm:text-[13px] leading-relaxed font-sans font-light">
-                Instantly acknowledged once received
+                Eligibility and supporting documents are reviewed
               </p>
             </div>
 
@@ -380,7 +380,7 @@ export default function ClaimsPage({ onMakeClaim, onTrackClaim }: ClaimsPageProp
                 Settlement
               </h3>
               <p className="text-emerald-100/60 text-xs sm:text-[13px] leading-relaxed font-sans font-light">
-                Valid claims paid promptly, with clear communication at every stage
+                Approved pension benefits are paid with clear communication
               </p>
             </div>
           </div>
@@ -402,24 +402,24 @@ export default function ClaimsPage({ onMakeClaim, onTrackClaim }: ClaimsPageProp
             {/* Right main checklist layout */}
             <div className="lg:col-span-8 space-y-6">
               <h3 className="text-[26px] sm:text-[30px] font-bold text-gray-900 tracking-tight font-sans">
-                Document Checklists
+                Withdrawal Document Checklist
               </h3>
               
               <p className="text-[13px] text-gray-500 leading-relaxed font-sans font-light max-w-2xl">
-                Across Africa, we are designing health insurance solutions that meet real needs and support accessible, dependable care for individuals, families, and organizations.
+                Prepare the required identification, membership, banking, and supporting documents before submitting your pension withdrawal request.
               </p>
 
               <div className="pt-4">
                 <a
                   href="/assets/images/Hero_1.png"
-                  download="emPLE_Claim_Checklists.zip"
+                  download="emPLE_Withdrawal_Checklist.pdf"
                   onClick={(e) => {
                     // Prevent actual navigation but simulate downloading
                     e.preventDefault();
                     const link = document.createElement("a");
                     link.href = "#";
                     // Just alert/state downloader simulation
-                    alert("Your download has been request. Checklist PDF is package and compiling.");
+                    alert("Your withdrawal document checklist is being prepared.");
                   }}
                   className="px-5 py-3 bg-[#32B44A] hover:bg-[#059669] text-white text-[12px] font-bold tracking-wider rounded-md transition-all duration-300 inline-flex items-center space-x-2.5 shadow-sm hover:-translate-y-0.5"
                 >
@@ -458,7 +458,7 @@ export default function ClaimsPage({ onMakeClaim, onTrackClaim }: ClaimsPageProp
               <div className="border-b border-[#f1f1f1] px-6 py-4 flex items-center justify-between bg-gray-50/50">
                 <div className="flex items-center space-x-2.5 text-gray-900">
                   <ShieldCheck className="text-[#32B44A]" size={20} />
-                  <span className="font-semibold text-sm">Submit emPLE Insurance Claim</span>
+                  <span className="font-semibold text-sm">Submit Pension Withdrawal Request</span>
                 </div>
                 <button
                   onClick={resetClaimForm}
@@ -552,7 +552,7 @@ export default function ClaimsPage({ onMakeClaim, onTrackClaim }: ClaimsPageProp
                     </div>
 
                     <div className="space-y-1.5">
-                      <label className="text-[12px] font-bold text-gray-500 uppercase">Required Benefit Claim Amount (GHS)</label>
+                      <label className="text-[12px] font-bold text-gray-500 uppercase">Requested Withdrawal Amount (GHS)</label>
                       <input
                         type="number"
                         required
@@ -568,7 +568,7 @@ export default function ClaimsPage({ onMakeClaim, onTrackClaim }: ClaimsPageProp
                       <textarea
                         rows={3}
                         required
-                        placeholder="Provide details about the claim event (date, status, place, etc.)..."
+                        placeholder="Provide details about your withdrawal request and qualifying circumstances..."
                         className="w-full px-3 py-2.5 bg-white border border-[#f1f1f1] rounded text-[12px] font-sans focus:outline-none focus:border-[#32B44A]"
                         value={additionalDetails}
                         onChange={(e) => setAdditionalDetails(e.target.value)}
@@ -621,7 +621,7 @@ export default function ClaimsPage({ onMakeClaim, onTrackClaim }: ClaimsPageProp
                         type="submit"
                         className="flex-1 py-3 bg-[#32B44A] hover:bg-[#059669] text-white text-[12px] font-bold tracking-wider rounded transition-all uppercase"
                       >
-                        Submit Final Claim
+                        Submit Withdrawal Request
                       </button>
                     </div>
                   </form>
@@ -634,21 +634,21 @@ export default function ClaimsPage({ onMakeClaim, onTrackClaim }: ClaimsPageProp
                     </div>
 
                     <div className="space-y-2">
-                      <h3 className="text-lg font-bold text-gray-900">Claim Received Successfully</h3>
+                      <h3 className="text-lg font-bold text-gray-900">Withdrawal Request Received</h3>
                       <p className="text-xs text-gray-500 max-w-sm mx-auto">
-                        Your emPLE Life policy claim dossier has been compiled and logged. It has been directed immediately to our rapid claims division.
+                        Your pension withdrawal request has been logged and sent to our benefits team for eligibility and document review.
                       </p>
                     </div>
 
                     {/* Code display */}
                     <div className="bg-gray-50 p-4 border border-[#f1f1f1] max-w-xs mx-auto space-y-1.5">
-                      <span className="text-[10px] text-gray-400 font-bold uppercase tracking-widest block">Claim Track Reference</span>
+                      <span className="text-[10px] text-gray-400 font-bold uppercase tracking-widest block">Withdrawal Reference</span>
                       <div className="flex items-center justify-center space-x-2">
                         <span className="font-mono text-base font-extrabold text-[#064e3b] tracking-wider">{generatedRef}</span>
                         <button
                           onClick={copyToClipboard}
                           className="text-gray-400 hover:text-emerald-600 focus:outline-none p-1 rounded hover:bg-gray-200 transition-colors"
-                          title="Copy Claim Code"
+                          title="Copy withdrawal reference"
                         >
                           {copied ? <Check size={14} className="text-[#32B44A]" /> : <Copy size={14} />}
                         </button>
@@ -707,7 +707,7 @@ export default function ClaimsPage({ onMakeClaim, onTrackClaim }: ClaimsPageProp
               <div className="border-b border-[#f1f1f1] px-6 py-4 flex items-center justify-between bg-gray-50/50">
                 <div className="flex items-center space-x-2.5 text-gray-900">
                   <Activity className="text-[#32B44A]" size={19} />
-                  <span className="font-semibold text-sm">Real-Time Claim Tracker</span>
+                  <span className="font-semibold text-sm">Withdrawal Request Tracker</span>
                 </div>
                 <button
                   onClick={() => {
@@ -727,7 +727,7 @@ export default function ClaimsPage({ onMakeClaim, onTrackClaim }: ClaimsPageProp
                 
                 {/* Search Form */}
                 <form onSubmit={handleTrackSubmit} className="space-y-2">
-                  <label className="text-[11px] font-bold text-gray-400 uppercase tracking-wider block">Enter Claim Reference Number</label>
+                  <label className="text-[11px] font-bold text-gray-400 uppercase tracking-wider block">Enter Withdrawal Reference Number</label>
                   <div className="flex space-x-2">
                     <div className="relative flex-1">
                       <input
@@ -786,7 +786,7 @@ export default function ClaimsPage({ onMakeClaim, onTrackClaim }: ClaimsPageProp
                     {/* Header info bar */}
                     <div className="bg-gray-50/50 border-b border-[#f1f1f1] p-4 flex justify-between items-center text-xs">
                       <div className="space-y-0.5">
-                        <span className="text-gray-400 text-[10px] font-bold uppercase block">Claimant</span>
+                        <span className="text-gray-400 text-[10px] font-bold uppercase block">Member</span>
                         <span className="font-bold text-gray-900">{trackingResult.claimant}</span>
                       </div>
                       <div className="text-right space-y-0.5">
@@ -905,14 +905,14 @@ export default function ClaimsPage({ onMakeClaim, onTrackClaim }: ClaimsPageProp
                         <p className="font-bold">
                           {trackingResult.status === "submitted" && "Dossier Received, Pending Document Review"}
                           {trackingResult.status === "processing" && "Documents Being Validated"}
-                          {trackingResult.status === "approved" && "Benefit Claim Authorized & Processed"}
+                          {trackingResult.status === "approved" && "Withdrawal Authorized & Processed"}
                           {trackingResult.status === "settled" && "Settlement Dispatched & Cleared"}
                         </p>
                         <p className="text-emerald-700 font-light select-text">
                           {trackingResult.status === "submitted" && "Your submitted materials are being cataloged by our systems. No further action is required at this time."}
-                          {trackingResult.status === "processing" && "Your policy and supporting document attachments are actively being validated for authenticity by our claims committee."}
+                          {trackingResult.status === "processing" && "Your eligibility and supporting documents are being reviewed by our pension benefits team."}
                           {trackingResult.status === "approved" && "Your benefit check has been authorized. The payout package will be wired or paid in-person relative to your coverage structure within 12 hours!"}
-                          {trackingResult.status === "settled" && `Success! The authorized claim GHS sum has been fully wired. Referenced on file: ${trackingResult.ref}.`}
+                          {trackingResult.status === "settled" && `Your approved pension withdrawal has been paid. Reference: ${trackingResult.ref}.`}
                         </p>
                       </div>
 

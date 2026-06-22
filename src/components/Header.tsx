@@ -306,15 +306,13 @@ export default function Header({ currentView, onViewChange, onProviderPlanChange
               {isResourcesMenuOpen && (
                 <div className="absolute left-0 top-full w-[190px] pt-[17px]">
                   <div className="border border-gray-100 bg-white shadow-md">
-                    <button
-                      onClick={() => {
-                        setIsResourcesMenuOpen(false);
-                        onContactClick();
-                      }}
+                    <a
+                      href="#"
+                      onClick={() => setIsResourcesMenuOpen(false)}
                       className="block w-full px-5 py-4 text-left font-montserrat text-[12px] text-[#15351f] hover:bg-gray-50 hover:text-[#32B44A]"
                     >
                       Calculator
-                    </button>
+                    </a>
                   </div>
                 </div>
               )}
@@ -481,16 +479,16 @@ export default function Header({ currentView, onViewChange, onProviderPlanChange
                   </button>
                   {isResourcesMenuOpen && (
                     <div className="pb-2 pl-4">
-                      <button
+                      <a
+                        href="#"
                         onClick={() => {
                           setIsResourcesMenuOpen(false);
                           setIsMobileMenuOpen(false);
-                          onContactClick();
                         }}
                         className="block w-full py-2 text-left text-[12px] text-gray-600 hover:text-[#32B44A]"
                       >
                         Calculator
-                      </button>
+                      </a>
                     </div>
                   )}
                 </div>
