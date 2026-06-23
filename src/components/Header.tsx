@@ -193,9 +193,9 @@ export default function Header({ currentView, onViewChange, onProviderPlanChange
             >
               LIFE
             </a>
-            <button onClick={() => handleNavClick("#plans-list-section", "PRODUCTS")} className="hover:text-emerald-300 transition-colors">
+            <a href="https://emple-health.vercel.app/" className="hover:text-emerald-300 transition-colors">
               HEALTH
-            </button>
+            </a>
           </div>
         </div>
       </div>

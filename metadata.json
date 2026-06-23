@@ -1,6 +1,0 @@
-{
-  "name": "emPLE Pension Trust",
-  "description": "Elegant emPLE Pension Trust website.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}

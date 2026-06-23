@@ -273,9 +273,37 @@ export default function App({
                 <p className="mb-5 text-[12px] font-medium uppercase tracking-[0.08em] text-gray-500">
                   Pensions Trust
                 </p>
-                <h1 className="max-w-[680px] font-display text-[38px] font-semibold leading-[1.08] tracking-[-0.025em] text-[#17283c] sm:text-[48px] lg:text-[52px]">
-                  We Provide You Financial Peace Of Mind For a Dignified Retirement
-                </h1>
+                <motion.h1
+                  initial="hidden"
+                  animate="visible"
+                  variants={{
+                    hidden: {},
+                    visible: { transition: { staggerChildren: 0.13, delayChildren: 0.15 } },
+                  }}
+                  className="max-w-[680px] overflow-hidden font-display text-[38px] font-semibold leading-[1.08] tracking-[-0.025em] text-[#17283c] sm:text-[48px] lg:text-[52px]"
+                >
+                  {[
+                    "We Provide You Financial",
+                    "Peace Of Mind For a",
+                    "Dignified Retirement",
+                  ].map((line) => (
+                    <motion.span
+                      key={line}
+                      variants={{
+                        hidden: { opacity: 0, y: 28, filter: "blur(5px)" },
+                        visible: {
+                          opacity: 1,
+                          y: 0,
+                          filter: "blur(0px)",
+                          transition: { duration: 0.65, ease: [0.22, 1, 0.36, 1] },
+                        },
+                      }}
+                      className="block"
+                    >
+                      {line}
+                    </motion.span>
+                  ))}
+                </motion.h1>
               </div>
               <div className="max-w-[410px] lg:justify-self-end">
                 <p className="leading-[1.75] text-[#344154]">
@@ -407,7 +435,7 @@ export default function App({
                 className="relative bg-white overflow-hidden aspect-[4/3] shadow-md border border-[#f1f1f1]"
               >
                 <img
-                  src="/assets/images/emple_why_us_1780859293681.png"
+                  src="/assets/images/why-emple-pensions.jpg"
                   alt="Why emPLE Meeting"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover"
@@ -620,7 +648,7 @@ export default function App({
                 <div className="lg:col-span-6">
                   <div className="relative aspect-[4/3] overflow-hidden">
                     <img
-                      src="/assets/images/emple_why_us_1780859293681.png"
+                      src="/assets/images/why-emple-pensions.jpg"
                       alt="emPLE Pensions advisor presenting to a client"
                       className="absolute inset-0 h-full w-full object-cover object-center"
                     />
